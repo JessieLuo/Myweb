@@ -14,49 +14,144 @@
 
         ul {
             list-style-type: none;
-            margin: 50px 0px;
+            margin: 10px 10px auto;
             text-align: center;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         li {
+            display: inline;
             float: left;
-            width: 80px;
+            width: 40px;
             padding: 10px;
-            background-color: #ff9137;
         }
 
         a:link,
-        a:visited,
-        a:hover,
-        a:active {
-            color: #fff;
+        a:visited {
             text-decoration: none;
         }
 
         a {
             display: block;
+            color: #00BFFF;
         }
 
-        #headerImg img {
+        .headerImg {
+            margin-top: 10px;
+        }
+
+        .headerImg img {
             border: white solid 1px;
+            position: relative;
             width: 100%;
             height: 100%;
             display: block;
         }
 
-        #span1 {
-            position: absolute;
-
+        .headerImg:hover {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            top: 0;
             width: 100%;
-            bottom: 10px;
-
-            left: 10px;
-
-            text-align: center;
-            font-size: 18px;
-            color: black;
+            height: 100%;
+            z-index: 100;
+            left: 0;
         }
+
+        .headerImg:hover span {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            color: #FFF;
+            text-align: center;
+            width: 100%;
+            z-index: 30;
+            height: 36px;
+            line-height: 36px;
+            background: #000;
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+        }
+
+        .intro img {
+            display: block;
+            width: 310px;
+            height: 310px;
+            margin: 0 40%;
+        }
+
+        .intro span {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        hr {
+            border: 1px solid #00BFFF;
+            width: 364px;
+            margin: 30pt 38%;
+        }
+
+        .intro p {
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            color: #00BFFF;
+        }
+
+        .project .img1 {
+            display: inline-block;
+            width: 20%;
+            /* border: 1px solid red; */
+            /*use for test*/
+            margin-left: 30%;
+            margin-top: 20px;
+            vertical-align: top;
+        }
+
+        .project .img1 img {
+            height: 170px;
+        }
+
+        .project .txt1 {
+            display: inline-block;
+            width: 30%;
+            margin-top: 60px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /**/
+        .project .img2 {
+            display: inline-block;
+            width: 22%;
+            /* border: 1px solid red; */
+            /*use for test*/
+            margin-left: 30%;
+            margin-top: 20px;
+            vertical-align: top;
+        }
+
+        .project .img2 img {
+            height: 170px;
+        }
+
+        .project .txt2 {
+            display: inline-block;
+            width: 30%;
+            margin-top: 60px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        /* #second{
+            width: 364px;
+            border: 1px solid #00BFFF;
+            margin: 30pt 50%;
+        } */
     </style>
 </head>
 
@@ -68,13 +163,38 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-    <div id="headerImg">
-        <img src="./deakinburwood-banner.png" />
+    <div class="headerImg">
+        <img src="./Picture/deakinburwood-banner.png" />
+        <span>Hey, I'm Jesse</span>
     </div>
-    <div id="text">
-        <span id="span1">deakin</span>
+    <div class="intro">
+        <img src="./Picture/introImg.jpeg">
+        <span>I am a Information Technology study in Melbourne, Australia</span>
+        <hr>
+        <p>Here' What I've done so far</p>
     </div>
-
+    <div class="project">
+        <div class="img1">
+            <img src="./Picture/Android.png">
+        </div>
+        <div class="txt1">
+            <article>
+                fjaksdjflkjal;dskjf;aljdfkajkdlsjflajdfuahfh<br>kasjfgdsfgdsfffgsdfgdsfgsdfgsdfgsdfgsdfgdsfgsdfgsdfgsd
+            </article>
+        </div>
+        <div class="img2">
+            <img src="./Picture/unity.png">
+        </div>
+        <div class="txt2">
+            <article>
+                fjaksdjflkjal;dskjf;aljdfkajkdlsjflajdfuahfh<br>kasjfgdsfgdsfffgsdfgdsfgsdfgsdfgsdfgsdfgdsfgsdfgsdfgsd
+            </article>
+        </div>
+    </div>
+    <hr>
+    <div class="photo">
+        
+    </div>
 </body>
 
 </html>
